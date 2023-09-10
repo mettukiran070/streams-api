@@ -17,6 +17,9 @@ public class Java8Streams {
         System.out.println();
         System.out.println("find out allthe duplicate elements in a given integers list");
         findDuplicateNums();
+        System.out.println();
+        System.out.println("find the total number of elements present in the list");
+        findTheTotalNumberOfEle();
     }
 
     // Given a list of integers, find out all the even numbers that exist in the list using Stream functions?
@@ -34,11 +37,21 @@ public class Java8Streams {
     }
 
     // How to find duplicate elements in a given integers list in java using Stream functions?
-
     public static void findDuplicateNums() {
         List<Integer> myList = Arrays.asList(10,15,8,49,25,98,98,32,15);
         Set<Integer> mySet = new HashSet<>();
         myList.stream().filter(n -> !mySet.add(n)).forEach(n -> System.out.print(n + " "));
+    }
+
+    // Given the list of integers, find the first element of the list using Stream functions?
+    public static void findFirstElement() {
+
+    }
+
+    // Given a list of integers, find the total number of elements present in the list using Stream functions?
+    public static void findTheTotalNumberOfEle() {
+        List<Integer> myList = Arrays.asList(10,15,8,49,25,98,98,32,15);
+        System.out.println(myList.stream().count());
     }
 
 
