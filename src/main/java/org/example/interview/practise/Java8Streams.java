@@ -53,7 +53,4 @@ public class Java8Streams {
         List<Integer> myList = Arrays.asList(10,15,8,49,25,98,98,32,15);
         System.out.println(myList.stream().count());
     }
-
-
-
 }
